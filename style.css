@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 5em;
+    background-color: black;
+    color: white;
+}
+
+#piano {
+    position: absolute;
+    height: 200px;
+    border: 5px solid black;
+    top: calc(50% - 100px);
+    left: calc(50% - 700px);
+    overflow: hidden;
+}
+
+.whiteKey{
+    height: 100%;
+    width: 50px;
+    background: white;
+    float: left;
+    border-right: 1px solid black;
+    position: relative;
+    transition: 0.5s;
+}
+
+.whiteKey:hover {
+    background-color: #ccc;
+}
+
+.blackKey {
+    position: absolute;
+    height: 65%;
+    width: 55%;
+    z-index: 1; 
+    background: black;
+    left: 68%;
+    transition: 0.5s;
+}
+
+.blackKey:hover {
+    background-color: rgb(73, 68, 68);
+}
